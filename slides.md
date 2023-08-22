@@ -30,14 +30,14 @@ Forget about machine learning for a moment.
 
 ---
 
-![[Untitled.png]]
+![identify](./Media/Untitled.png)
 Any ideas what we're looking at?
 
 ---
 
 How about now?
 
-![[nums.png]]
+![numbers](./Media/nums.png)
 
 ---
 
@@ -72,7 +72,7 @@ We're all smart programmers, let's try!
 
 What does our data look like? 
 
-![[num_breakdown.png|600]]
+![](./Media/num_breakdown.png)
 
 notes: 28x28 image as a 2d array. 0 represents a completely dim pixel, 255 represents a fully lit one -- plotted on a graph looks something like this. Lets hear some ideas for how we'd write an image identifier 
 
@@ -80,7 +80,7 @@ notes: 28x28 image as a 2d array. 0 represents a completely dim pixel, 255 repre
 
 Let's look at a solution I wrote
 
-![[Pasted image 20230813125020.png]]
+![](./Media/Pasted%20image%2020230813125020.png)
 
 notes: break out into google colab notebook
 
@@ -104,7 +104,7 @@ note: we said it before -- visual cortex, central nervous system which triggers 
 
 a *set of* neurons might activate in response to a particular stimulus
 
-![[41583_2022_598_Fig1_HTML.png]]
+![](./Media/41583_2022_598_Fig1_HTML.png)
 
 notes: The stimulus pass through our neurons might light up entire regions of the brain with activity. So there's this idea of a cascading signal lighting up particular pathways
 
@@ -126,7 +126,7 @@ notes: In math when we have some data set and we want to determine given some in
 
 eg: this data generally fits a sine wave
 
-![[Pasted image 20230813133027.png|600]]
+![](./Media/Pasted%20image%2020230813133027.png)
 
 $$y = 3sin(x)$$
 
@@ -143,7 +143,7 @@ notes: so the problem here is that we're dealing with what we call high dimensio
 
 What if we used linear functions?
 
-![[Pasted image 20230813131803.png]]
+![](./Media/Pasted%20image%2020230813131803.png)
 
 $$y = \sigma(w_1 x_1 + w_2 x_2 + ... +  w_n x_n)$$
 
@@ -182,7 +182,7 @@ notes: our hope here is that if the first layer sees every pixel, and thus is ac
 ---
 
 Ok great! lets try it!
-![[Pasted image 20230813143231.png]]
+![](./Media/Pasted%20image%2020230813143231.png)
 notes: Break into colab notebook after walking through the code. Keras gives us some nice libraries to represent these layers as objects and call-back functions we can pass to each other
 
 
@@ -220,7 +220,7 @@ notes: earlier in the presentation we spoke about how the hope was that a partic
 
 Lets actually check if our hope was right
 
-![[neural_weights.png]]
+![](./Media/neural_weights.png)
 
 notes: this is what the inside of our simple neural network's brain looks like. this is the set of weights for one of our layers with 16 neurons in it. It's pretty easy to see that our hope for how this was going to work, versus how it actually works was way off. Here the dark spots are the parts deemed less important and the brighter spots are where the network is deciding to focus. the shapes we're seeing are more or less random.
 
@@ -234,7 +234,7 @@ notes: there is so much to learn here, our example was one of the most basic for
 
 If you want to play with the notebook / code from this presentation: 
 
-![[Machine_learning_Colab.png]]
+![](./Media/Machine_learning_Colab.png)
 
 Or go to:
 https://www.github.com/m-triassi/machine-learning-basics
